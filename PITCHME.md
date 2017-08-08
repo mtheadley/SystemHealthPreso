@@ -1,6 +1,6 @@
 ---
 
-## Is Your application health?
+## Is Your application healthy?
 ###### This one trick will ease all of your support pains.
 
 ![Trick](assets/trick.jpg)
@@ -28,9 +28,19 @@ There isn't any code in this preso.
 
 User calls Tier One support.
 
+<img src="./assets/angry-phone-user2.jpg" width="250" />
+
 +++
 
-Tier One --> Tier Two (BA/PM) --> Hunts down the coder.
+Tier One --> Tier Two (BA/PM) 
+
+<img src="./assets/throw_over_the_wall.png" width="250" />
+
++++
+
+Tier Two ... hunt down a developer
+
+<img src="./assets/mob.jpg" width="250" />
 
 ---
 
@@ -40,15 +50,16 @@ Tier One --> Tier Two (BA/PM) --> Hunts down the coder.
 
 ## What went wrong?
 
-* New code having problems?
-* What errors are the user receiving?
-* Is there anything in the error emails?
-* Anything in the logs?
+* New code having problems? |
+* What errors are the user receiving? |
+* Is there anything in the error emails? |
+* Anything in the logs? |
 * What about the system itself (machines, dns, network, solar alignment, etc...)
 
 +++
 
-##Uh, oh... Elastic is down
+##Ah-ha! ... Elastic is down
+|
 
 <img src="./assets/elastic.png" width="250" />
 
