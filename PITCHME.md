@@ -1,9 +1,9 @@
 ---
 <p align="center">
-	<h1> Is your application healthy? </h1>
-	<h3> This one trick will ease all of your support pains. </h3>
+	<h3> Is your application healthy? </h3>
+	<h6> This one trick will ease all of your support pains. </h6>
 </p>
-
+<img src="./images/trick.jpg"/>
 
 
 ---
