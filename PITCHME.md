@@ -84,7 +84,7 @@ How can we figure out, at a glance, that the external items that EngageTV talks 
 
 Create a status page / sanity check / health monitor
 
----
++++
 
 ### Goals
 
@@ -145,7 +145,7 @@ Harbor has a Ping method. -- One and done.
 
 ##### DataCity
 
-DataCity has a ping method, but it returns html.  Again, if I get a response, I am assuming the site is up.
+DataCity has a ping method, but it returns html.  Again, if a 200 response is returned, assume the site is up.
 
 +++
 
@@ -182,17 +182,17 @@ Use the Titlewave thinking...rinse, repeat.
 
 +++
 
-### Time to build
-
-<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" width="500"/>
-
-+++
-
 ### Build an API endpoint
 
 +++
 
 ### Build a pretty UI
+
++++
+
+### Time to build
+
+<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" width="500"/>
 
 +++
 
@@ -218,6 +218,8 @@ PROS:
 > Gives us a heads up on the systems that ETV talks with.  We are able to, at a glace, determine if there is an issue and where that issue lies.
 > Goal is to cut down on the amount of triaging the system during outages.
 > Streamline a process for DevOps' CI process.
+
++++
 
 CONS:
 > The System health mechanism is not made for frequent polling.  Since we are cheating with a couple of the checks to external systems, it is unknown what type of effect calling the external endpoints may impact that system's resources.
