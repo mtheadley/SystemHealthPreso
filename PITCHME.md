@@ -22,7 +22,7 @@ There isn't any code in this preso.
 
 ## ENGAGE TV is down....
 
-![Panic](assets/haironfire.gif =250x)
+![Panic](./assets/haironfire.gif =250x)
 
 ---
 
