@@ -22,7 +22,7 @@ There isn't any code in this preso.
 
 ENGAGE TV is down....
 
-![Trick](assets/haironfire.gif)
+---?image=assets/haironfire.gif&size=auto 60%
 
 ---
 
