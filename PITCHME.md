@@ -64,7 +64,6 @@ Not that you personally can do much about this, you need to contact DevOps, DOC,
 
 Wouldn't it be great if Tier One could have detected this, notified the correct people and you could keep coding?
 
-<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" width="250"/>
 
 ---
 
@@ -184,7 +183,7 @@ Use the Titlewave thinking...rinse, repeat.
 
 ### Time to build
 
-(hacker image)
+<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" width="500"/>
 
 ---
 
