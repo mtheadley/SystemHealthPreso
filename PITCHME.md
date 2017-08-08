@@ -10,17 +10,19 @@
 
 ---
 
-Not much code.
+## Warning...
+
+There isn't any code in this preso.
 
 ---
 
-### Scenario
+## Scenario
 
 ---
 
 ENGAGE TV is down....
 
-(hair on fire)
+![Trick](assets/haironfire.gif)
 
 ---
 
