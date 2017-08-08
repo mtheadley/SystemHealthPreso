@@ -57,9 +57,7 @@ Not that you can do much about this, you need to contact DevOps, DOC, etc.
 
 ---
 
-Wouldn't it be great if Tier One could have detected this?
-
-You could keep coding?
+Wouldn't it be great if Tier One could have detected this, notified the correct people and you could keep coding?
 
 ---
 
@@ -71,32 +69,34 @@ How can we figure out, at a glance, that the external items that EngageTV talks 
 
 ---
 
-The result must be simple to understand. (Yes/No)
-
----
-
 ### Possible Solution
 
 Create a status page / sanity check / health monitor
 
 ---
 
-### How to Implement?
+### Goals
 
-Determine a way to ping/poll each external system within the application to determine if the application is responding.
-An aggregate of that information will show whether or not the application is 'healthy'
-
+> The result must be simple to understand. (Yes/No)
+> Result should give a simple breakdown of the systems involved.
 
 ---
 
-### For EngageTV
+### How to Implement?
 
-At the top tier, ETV talks to 3 things
+Determine a way to ping/poll each external system within the application to determine if the application is responding.
+Aggregate that information to show whether or not the application is 'healthy'
+
+---
+
+### Thinking...
+
+At the API tier, ETV talks to 3 things
 * Mongo
 * Elastic
 * BackEnd / Updaters
 
-The Updaters (which are a windows process), pull information from other systems to build up Elastic
+The Updaters (which are a Windows process), talk to other systems to build up the Elastic index
 * Titlewave
 * Harbor
 * ASM
@@ -105,7 +105,7 @@ The Updaters (which are a windows process), pull information from other systems 
 
 ---
 
-### Thinking...
+### More Thinking...
 ##### Mongo
 
 I can execute a command against Mongo and determine based on the results if things are healthy.
