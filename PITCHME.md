@@ -22,25 +22,25 @@ There isn't any code in this preso.
 
 ## ENGAGE TV is down....
 
-<img src="./assets/haironfire.gif" width="250" />
+<img src="./assets/haironfire.gif" width="350" />
 
 +++
 
 User calls Tier One support.
 
-<img src="./assets/angry-phone-user2.jpg" width="250" />
+<img src="./assets/angry-phone-user2.jpg" width="350" />
 
 +++
 
 Tier One hands it over to Tier Two (BA/PM) 
 
-<img src="./assets/throw_over_the_wall.png" width="250" />
+<img src="./assets/throw_over_the_wall.png" width="350" />
 
 +++
 
 Tier Two ... hunt down a developer
 
-<img src="./assets/mob1.jpg" width="250" />
+<img src="./assets/mob1.jpg" width="350" />
 
 ---
 
@@ -68,7 +68,8 @@ Elastic is causing the outage...
 
 ##Result
 
-Not must you can personally do about this... you need to contact DevOps, DOC, NOC, DOC OCK, SPOCK...
+- Not much you personally can do about this... | 
+- You need to contact DevOps, DOC, NOC, DOC OCK, SPOCK...
 
 ---
 
@@ -107,7 +108,7 @@ Create a status page / sanity check / health monitor / status endpoint
 
 ### How to Implement?
 
-- Determine a way to ask each external system within the application to see if it is responding. |
+- Determine a way to check each external system within the application to see if it is responding. |
 - Aggregate that information to show whether or not the application is 'healthy' |
 
 +++
@@ -167,7 +168,8 @@ How are the external systems in ETV organized?
 
 ##### Titlewave
 
-- Titlewave doesn't have a ping method...yet.  **BUT** I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up. |
+- Titlewave doesn't have a ping method...yet. |
+- *BUT* I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up. |
 
 +++
 
@@ -187,13 +189,15 @@ How are the external systems in ETV organized?
 ### Putting the pieces together
 
 - Simple JSON object |
-	-SystemName |
-	-Url |
-	-IsAlive |
-	-Message (used for exceptions) |
+```
+	SystemName
+	Url
+	IsAlive
+	Message (used for exceptions)
+```
 
-- Put together an API endpoint
-- Put together a pretty UI
+- Put together an API endpoint |
+- Put together a pretty UI |
 
 +++
 
@@ -209,29 +213,29 @@ How are the external systems in ETV organized?
 
 ###Bonus
 
-Since the API endpoint will return a 503 (System Unavailable) is there is an issue, and a 200 otherwise; DevOps can use the endpoint in their build process to ensure the application was deployed successfully.
+- Since the API endpoint will return a 503 (System Unavailable) if there is an issue, and a 200 otherwise; DevOps can use the endpoint in their build process to ensure the application was deployed successfully. |
 
 
 +++
 
 ###Bonus #2
 
-Other *Upstream* environments can use the endpoint in their System checks to see if EngageTV is running correctly.
+- Other *Upstream* environments can use the endpoint in their System checks to see if EngageTV is running correctly. |
 
 ---
 
 ###Final thoughts
 
 PROS:
-- Gives us a heads up on the systems that ETV talks with.  We are able to, at a glace, determine if there is an issue and where that issue lies.
-- Goal is to cut down on the amount of triaging the system during outages.
-- Streamline a process for DevOps' CI process.
+- Gives us a heads up on the systems that ETV talks with.  We are able to, at a glace, determine if there is an issue and where that issue lies. |
+- Goal is to cut down on the amount of time it takes to triage why the system is down. |
+- Streamline a process for DevOps' CI process. |
 
 +++
 
 CONS:
-- The System health mechanism is not made for frequent polling.  Since we are cheating with a couple of the checks to external systems, it is unknown what type of effect calling the external endpoints may impact that system's resources.
-- Some of the calls make take a few moments to return.
+- The System health mechanism is not made for frequent polling.  Since we are cheating with a couple of the checks to external systems, it is unknown what type of effect calling the external endpoints may impact that system's resources. |
+- Some of the calls make take a few moments to return. |
 
 +++
 
