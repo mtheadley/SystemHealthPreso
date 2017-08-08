@@ -22,7 +22,7 @@ There isn't any code in this preso.
 
 ## ENGAGE TV is down....
 
-![Panic](assets/haironfire.gif=250x)
+![Panic](assets/haironfire.gif =250x)
 
 ---
 
@@ -50,7 +50,7 @@ Tier One --> Tier Two (BA/PM) --> Hunts down the coder.
 
 ##Uh, oh... Elastic is down
 
-![Elastic](assets/elastic.png=250x)
+![Elastic](assets/elastic.png =250x)
 
 ---
 
