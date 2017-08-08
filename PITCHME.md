@@ -68,7 +68,7 @@ Elastic is causing the outage...
 
 ##Result
 
-Not must you can personally do about this... you need to contact DevOps, DOC, NOC, SPOCK...
+Not must you can personally do about this... you need to contact DevOps, DOC, NOC, DOC OCK, SPOCK...
 
 ---
 
@@ -86,19 +86,19 @@ I can fix it!
 
 +++
 
-### What to do?
+### How to Accomplish?
 
 - How can we figure out, at a glance, that the external systems that talks to app are up and running? |
 
 +++
 
-### Possible Solution
+### Possible Solution(s)
 
 Create a status page / sanity check / health monitor / status endpoint
 
 +++
 
-### Goals
+### Overall Goals
 
 - The result must be simple to understand. (Yes/No) |
 - Result should give a simple breakdown of the systems involved. |
@@ -107,7 +107,7 @@ Create a status page / sanity check / health monitor / status endpoint
 
 ### How to Implement?
 
-- Determine a way to ping/poll each external system within the application to determine if the application is responding. |
+- Determine a way to ask each external system within the application to see if it is responding. |
 - Aggregate that information to show whether or not the application is 'healthy' |
 
 +++
@@ -137,13 +137,13 @@ How are the external systems in ETV organized?
 ### How do I get what I want? 
 ##### Mongo
 
-- I can execute a raw command against Mongo and determine based on the results if things are healthy. |
+- A raw command can be executed against Mongo and determine based on the results if things are healthy. |
 
 +++
 
 ##### Elastic Search
 
-- There is a API call on the Elastic drivers that can used.  Since the server itself is up all the time, we want to see the health of the indexes. |
+- There is an API call on the Elastic drivers that can be used.  Since the server itself is up all the time, we want to see the health of the indexes. |
 
 +++
 
@@ -161,7 +161,7 @@ How are the external systems in ETV organized?
 
 ##### DataCity
 
-- DataCity has a ping method, but it returns html.  Again, if a 200 response is returned, assume the site is up. |
+- DataCity has a ping method, but it returns html.  If a 200 response is returned, then assume the site is up. |
 
 +++
 
@@ -186,22 +186,14 @@ How are the external systems in ETV organized?
 
 ### Putting the pieces together
 
-+++
+- Simple JSON object |
+	-SystemName |
+	-Url |
+	-IsAlive |
+	-Message (used for exceptions) |
 
-### Simple JSON object
-
-	SystemName
-	Url
-	IsAlive
-	Message (used for exceptions)
-
-+++
-
-### Build an API endpoint
-
-+++
-
-### Build a pretty UI
+- Put together an API endpoint
+- Put together a pretty UI
 
 +++
 
@@ -211,13 +203,14 @@ How are the external systems in ETV organized?
 
 +++
 
-## Demo
+### Demo
 
 ---
 
 ###Bonus
 
-Since the API endpoint will return a 503 (System Unavailable) vs a 200, DevOps can use the endpoint in their build process to ensure the application was deployed successfully.
+Since the API endpoint will return a 503 (System Unavailable) is there is an issue, and a 200 otherwise; DevOps can use the endpoint in their build process to ensure the application was deployed successfully.
+
 
 +++
 
