@@ -50,11 +50,11 @@ Tier Two ... hunt down a developer
 
 ## What went wrong?
 
-* New code having problems? |
-* What errors are the user receiving? |
-* Is there anything in the error emails? |
-* Anything in the logs? |
-* What about the system itself (machines, dns, network, solar alignment, etc...)
+- New code having problems? |
+- What errors are the user receiving? |
+- Is there anything in the error emails? |
+- Anything in the logs? |
+- What about the system itself (machines, dns, network, solar alignment, etc...)
 
 +++
 
