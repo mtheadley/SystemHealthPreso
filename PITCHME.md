@@ -61,25 +61,25 @@ Wouldn't it be great if Tier One could have detected this?
 
 You could keep coding?
 
-----
+---
 
 ### What to do?
 
-----
+---
 
 How can we figure out, at a glance, that the external items that EngageTV talks to are up and running?
 
-----
+---
 
 The result must be simple to understand. (Yes/No)
 
-----
+---
 
 ### Possible Solution
 
 Create a status page / sanity check / health monitor
 
-----
+---
 
 ### How to Implement?
 
@@ -87,7 +87,7 @@ Determine a way to ping/poll each external system within the application to dete
 An aggregate of that information will show whether or not the application is 'healthy'
 
 
-----
+---
 
 ### For EngageTV
 
@@ -103,7 +103,7 @@ The Updaters (which are a windows process), pull information from other systems 
 * DataCity
 * Spotlight
 
-----
+---
 
 ### Thinking...
 ##### Mongo
@@ -112,49 +112,49 @@ I can execute a command against Mongo and determine based on the results if thin
 
 (DBStat)
 
-----
+---
 
 ### More thinking...
 ##### Elastic Search
 
 There is a API call on the Elastic drivers that can used.  Since the server itself is up all the time, we want to see the health of the indexes.
 
-----
+---
 
 ### More thinking...
 ##### Updaters (EngageTVs worker process)
 
 The Updater process has a monitoring page.  If that page is responding, then the Updater service is running.
 
-----
+---
 
 ### More thinking...
 ##### Harbor
 
 Harbor has a Ping method. -- One and done.
 
-----
+---
 
 ### More thinking...
 ##### DataCity
 
 DataCity has a ping method, but it returns html.  Again, if I get a response, I am assuming the site is up.
 
-----
+---
 
 ### More thinking...
 ##### Titlewave
 
 Titlewave doesn't have a ping method...yet.  **BUT** I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up.
 
-----
+---
 
 ### More thinking...
 ##### ASM
 
 ASM doesn't have a ping method, and probably won't.  Follow Titlewave's example. 
 
-----
+---
 
 ### More thinking...
 ##### Spotlight
@@ -164,7 +164,7 @@ ASM doesn't have a ping method, and probably won't.  Follow Titlewave's example.
 Use the Titlewave thinking...rinse, repeat.
 
 
-----
+---
 
 ### Simple JSON object
 
@@ -173,38 +173,38 @@ Use the Titlewave thinking...rinse, repeat.
 	IsAlive
 	Message (used for exceptions)
 
-----
+---
 
 ### Time to build
 
 (hacker image)
 
-----
+---
 
 ### Build an API endpoint
 
-----
+---
 
 ### Build a pretty UI
 
-----
+---
 
 ## Demo
 
-----
+---
 
 ###Bonus
 
 Since the API endpoint will return a 503 (System Unavailable) vs a 200, DevOps can use the endpoint in their build process to ensure the application was deployed successfully.
 
-----
+---
 
 ###Bonus #2
 
 Other *Upstream* environments can use the endpoint in their System checks to see if EngageTV is running correctly.
 
 
-----
+---
 
 ###Final thoughts
 
@@ -217,13 +217,13 @@ CONS:
 > The System health mechanism is not made for frequent polling.  Since we are cheating with a couple of the checks to external systems, it is unknown what type of effect calling the external endpoints may impact that system's resources.
 > Some of the calls make take a few moments to return.
 
-----
+---
 
 ###Lingering Thoughts
 
 Can it be improved?  You betcha!
 
-----
+---
 
 ## Questions?
 
