@@ -78,7 +78,7 @@ Not must you can personally do about this... you need to contact DevOps, DOC, NO
 
 ---
 
-### I'ma programmer!
+### Imma programmer!
 
 I can fix it!
 
@@ -105,34 +105,33 @@ Create a status page / sanity check / health monitor
 - The result must be simple to understand. (Yes/No) |
 - Result should give a simple breakdown of the systems involved. |
 
----
++++
 
 ### How to Implement?
 
 - Determine a way to ping/poll each external system within the application to determine if the application is responding. |
 - Aggregate that information to show whether or not the application is 'healthy' |
 
----
++++
 
-### Easy -- right?
+### Easy, right?
 
-Let's go back to our pratical example...and I am partially biased, EngageTV...
+- Let's go back to our pratical example...and I am partially biased, EngageTV... |
 
 --- 
 
 ### Thinking...
 
-At the API tier, ETV talks to 3 things
-* Mongo
-* Elastic
-* BackEnd / Updaters
+How are the external systems in ETV organized?
 
-The Updaters (which are a Windows process), talk to other systems to build up the Elastic index
-* Titlewave
-* Harbor
-* ASM
-* DataCity
-* Spotlight
+- Mongo
+- Elastic
+- BackEnd / Updaters
+	- Titlewave
+	- Harbor
+	- ASM
+	- DataCity
+	- Spotlight
 
 +++
 
