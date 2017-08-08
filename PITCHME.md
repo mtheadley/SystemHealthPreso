@@ -40,7 +40,7 @@ Tier One --> Tier Two (BA/PM)
 
 Tier Two ... hunt down a developer
 
-<img src="./assets/mob.jpg" width="250" />
+<img src="./assets/mob1.jpg" width="250" />
 
 ---
 
