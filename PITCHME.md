@@ -62,19 +62,19 @@ Tier Two ... hunt down a developer
 
 Elastic is down 
 
-<img src="./assets/elastic.png" width="250" />
+<img src="./assets/elastic.png" width="500" />
 
 +++
 
 ##Result
 
-Not that you personally can do much about this, you need to contact DevOps, DOC, etc.
+Not must you can personally do about this... you need to contact DevOps, DOC, NOC, SPOCK...
 
 ---
 
 ##What If???
 
-Wouldn't it be great if Tier One could have detected this, notified the correct people and you could keep coding?
+- Wouldn't it be great if Tier One could have detected this, notified the correct people and you could keep coding? |
 
 ---
 
@@ -82,13 +82,15 @@ Wouldn't it be great if Tier One could have detected this, notified the correct 
 
 I can fix it!
 
+<img src="./assets/how-much-money-the-characters-in-hbos-silicon-valley-would-make-in-real-life.jpg" width="500" />
+
 +++
 
 ### What to do?
 
 +++
 
-How can we figure out, at a glance, that the external items that EngageTV talks to are up and running?
+How can we figure out, at a glance, that the external systems that talks to app are up and running?
 
 +++
 
@@ -100,17 +102,23 @@ Create a status page / sanity check / health monitor
 
 ### Goals
 
-> The result must be simple to understand. (Yes/No)
-> Result should give a simple breakdown of the systems involved.
+- The result must be simple to understand. (Yes/No) |
+- Result should give a simple breakdown of the systems involved. |
 
 ---
 
 ### How to Implement?
 
-Determine a way to ping/poll each external system within the application to determine if the application is responding.
-Aggregate that information to show whether or not the application is 'healthy'
+- Determine a way to ping/poll each external system within the application to determine if the application is responding. |
+- Aggregate that information to show whether or not the application is 'healthy' |
 
 ---
+
+### Easy -- right?
+
+Let's go back to our pratical example...and I am partially biased, EngageTV...
+
+--- 
 
 ### Thinking...
 
@@ -131,9 +139,7 @@ The Updaters (which are a Windows process), talk to other systems to build up th
 ### More Thinking...
 ##### Mongo
 
-I can execute a command against Mongo and determine based on the results if things are healthy.
-
-(DBStat)
+I can execute a raw command against Mongo and determine based on the results if things are healthy.
 
 +++
 
@@ -227,25 +233,25 @@ Other *Upstream* environments can use the endpoint in their System checks to see
 ###Final thoughts
 
 PROS:
-> Gives us a heads up on the systems that ETV talks with.  We are able to, at a glace, determine if there is an issue and where that issue lies.
-> Goal is to cut down on the amount of triaging the system during outages.
-> Streamline a process for DevOps' CI process.
+- Gives us a heads up on the systems that ETV talks with.  We are able to, at a glace, determine if there is an issue and where that issue lies.
+- Goal is to cut down on the amount of triaging the system during outages.
+- Streamline a process for DevOps' CI process.
 
 +++
 
 CONS:
-> The System health mechanism is not made for frequent polling.  Since we are cheating with a couple of the checks to external systems, it is unknown what type of effect calling the external endpoints may impact that system's resources.
-> Some of the calls make take a few moments to return.
+- The System health mechanism is not made for frequent polling.  Since we are cheating with a couple of the checks to external systems, it is unknown what type of effect calling the external endpoints may impact that system's resources.
+- Some of the calls make take a few moments to return.
 
 +++
 
 ###Lingering Thoughts
 
-Can it be improved?  You betcha!
+- Can it be improved?  You betcha!
 
 ---
 
-## Questions?
+### Questions?
 
 
 
