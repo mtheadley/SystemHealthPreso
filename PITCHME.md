@@ -2,7 +2,7 @@
 <p align="center">
 	<h3> Is your application healthy? </h3>
 	<h6> This one trick will ease all of your support pains. </h6>
-	![Logo](images/trick.jpg)
+	![Trick](assets/trick.jpg)
 </p>
 <p align="center">
 	<h4> Mark Headley </h4>
