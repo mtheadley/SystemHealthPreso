@@ -20,7 +20,7 @@ There isn't any code in this preso.
 
 ---
 
-ENGAGE TV is down....
+## ENGAGE TV is down....
 
 ---?image=assets/haironfire.gif&size=auto 60%
 
@@ -39,18 +39,19 @@ Tier One --> Tier Two (BA/PM) --> Hunts down the coder.
 
 ---
 
-<ul>
-<li> New code having problems? </li>
-<li> What errors are being reported </li>
-<li> Check error emails </li>
-<li> Check logs. </li>
-<li> Start checking external components </li>
-<li> Uh, oh... Elastic is down</li>
-</ul>
+*New code having problems?
+*What errors are the user receiving?
+*Is there anything in the error emails?
+*Anything in the logs?
+*What about the system itself (machines, dns, network, solar alignment, etc...)
+*Uh, oh... Elastic is down
+
 
 ---
 
-(screen capture of Elastic)
+##Uh,oh... Elastic is down
+
+---?image=assets/elastic.jpg&size=auto 60%
 
 ---
 
