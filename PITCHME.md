@@ -39,19 +39,18 @@ Tier One --> Tier Two (BA/PM) --> Hunts down the coder.
 
 ---
 
-*New code having problems?
-*What errors are the user receiving?
-*Is there anything in the error emails?
-*Anything in the logs?
-*What about the system itself (machines, dns, network, solar alignment, etc...)
-*Uh, oh... Elastic is down
+-New code having problems?
+-What errors are the user receiving?
+-Is there anything in the error emails?
+-Anything in the logs?
+-What about the system itself (machines, dns, network, solar alignment, etc...)
 
 
 ---
 
 ##Uh,oh... Elastic is down
 
----?image=assets/elastic.jpg&size=auto 60%
+---?image=assets/elastic.png&size=auto 60%
 
 ---
 
