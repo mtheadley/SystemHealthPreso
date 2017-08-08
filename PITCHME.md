@@ -22,7 +22,7 @@ There isn't any code in this preso.
 
 ## ENGAGE TV is down....
 
-<img src="./assets/haironfire.gif" width="250">
+<img src="./assets/haironfire.gif" width="250" />
 
 ---
 
@@ -50,15 +50,21 @@ Tier One --> Tier Two (BA/PM) --> Hunts down the coder.
 
 ##Uh, oh... Elastic is down
 
-![Elastic](assets/elastic.png =250x)
+<img src="./assets/elastic.png" width="250" />
 
 ---
 
-Not that you can do much about this, you need to contact DevOps, DOC, etc.
+##Result
+
+Not that you personally can do much about this, you need to contact DevOps, DOC, etc.
 
 ---
+
+##What If???
 
 Wouldn't it be great if Tier One could have detected this, notified the correct people and you could keep coding?
+
+<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" width="250"/>
 
 ---
 
