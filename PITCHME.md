@@ -32,7 +32,7 @@ User calls Tier One support.
 
 +++
 
-Tier One --> Tier Two (BA/PM) 
+Tier One hands it over to Tier Two (BA/PM) 
 
 <img src="./assets/throw_over_the_wall.png" width="250" />
 
@@ -58,9 +58,9 @@ Tier Two ... hunt down a developer
 
 +++
 
-##Ah-ha! ... 
+##Ah-ha!
 
-Elastic is down 
+Elastic is causing the outage... 
 
 <img src="./assets/elastic.png" width="500" />
 
@@ -88,15 +88,13 @@ I can fix it!
 
 ### What to do?
 
-+++
-
-How can we figure out, at a glance, that the external systems that talks to app are up and running?
+- How can we figure out, at a glance, that the external systems that talks to app are up and running? |
 
 +++
 
 ### Possible Solution
 
-Create a status page / sanity check / health monitor
+Create a status page / sanity check / health monitor / status endpoint
 
 +++
 
@@ -116,7 +114,8 @@ Create a status page / sanity check / health monitor
 
 ### Easy, right?
 
-- Let's go back to our pratical example...and I am partially biased, EngageTV... |
+- Let's go back to our pratical example... |
+- I am partially biased, so we will use EngageTV... |
 
 --- 
 
@@ -124,18 +123,18 @@ Create a status page / sanity check / health monitor
 
 How are the external systems in ETV organized?
 
-- Mongo
-- Elastic
-- BackEnd / Updaters
-	- Titlewave
-	- Harbor
-	- ASM
-	- DataCity
-	- Spotlight
+- Mongo |
+- Elastic |
+- Updaters |
+	- Titlewave |
+	- Harbor |
+	- ASM |
+	- DataCity |
+	- Spotlight |
 
 +++
 
-### More Thinking...
+### How do I get what I want? 
 ##### Mongo
 
 I can execute a raw command against Mongo and determine based on the results if things are healthy.
