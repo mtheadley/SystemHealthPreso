@@ -137,51 +137,50 @@ How are the external systems in ETV organized?
 ### How do I get what I want? 
 ##### Mongo
 
-I can execute a raw command against Mongo and determine based on the results if things are healthy.
+- I can execute a raw command against Mongo and determine based on the results if things are healthy. |
 
 +++
 
 ##### Elastic Search
 
-There is a API call on the Elastic drivers that can used.  Since the server itself is up all the time, we want to see the health of the indexes.
+- There is a API call on the Elastic drivers that can used.  Since the server itself is up all the time, we want to see the health of the indexes. |
 
 +++
 
 ##### Updaters (EngageTVs worker process)
 
-The Updater process has a monitoring page.  If that page is responding, then the Updater service is running.
+- The Updater process has a monitoring page.  If that page is responding, then the Updater service is running. |
 
 +++
 
 ##### Harbor
 
-Harbor has a Ping method. -- One and done.
+- Harbor has a Ping method. -- One and done. |
 
 +++
 
 ##### DataCity
 
-DataCity has a ping method, but it returns html.  Again, if a 200 response is returned, assume the site is up.
+- DataCity has a ping method, but it returns html.  Again, if a 200 response is returned, assume the site is up. |
 
 +++
 
 ##### Titlewave
 
-Titlewave doesn't have a ping method...yet.  **BUT** I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up.
+- Titlewave doesn't have a ping method...yet.  **BUT** I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up. |
 
 +++
 
 ##### ASM
 
-ASM doesn't have a ping method, and probably won't.  Follow Titlewave's example. 
+- ASM doesn't have a ping method, and probably won't.  Follow Titlewave's example. |
 
 +++
 
 ##### Spotlight
 
+- Use the Titlewave thinking...rinse, repeat. |
 *This system will be sunsetted shortly.*
-
-Use the Titlewave thinking...rinse, repeat.
 
 ---
 
