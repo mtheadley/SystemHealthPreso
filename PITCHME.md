@@ -22,7 +22,7 @@ There isn't any code in this preso.
 
 ## ENGAGE TV is down....
 
----?image=assets/haironfire.gif&size=auto 60%
+![Panic](assets/haironfire.gif=250x)
 
 ---
 
@@ -34,23 +34,23 @@ Tier One --> Tier Two (BA/PM) --> Hunts down the coder.
 
 ---
 
-### Triage 
-##### What went wrong?
+## Triage 
 
 ---
 
--New code having problems?
--What errors are the user receiving?
--Is there anything in the error emails?
--Anything in the logs?
--What about the system itself (machines, dns, network, solar alignment, etc...)
+## What went wrong?
 
+* New code having problems?
+* What errors are the user receiving?
+* Is there anything in the error emails?
+* Anything in the logs?
+* What about the system itself (machines, dns, network, solar alignment, etc...)
 
 ---
 
-##Uh,oh... Elastic is down
+##Uh, oh... Elastic is down
 
----?image=assets/elastic.png&size=auto 60%
+![Elastic](assets/elastic.png=250x)
 
 ---
 
