@@ -6,7 +6,7 @@
 ![Trick](assets/trick.jpg)
 
 ### Mark Headley 
-
+<img src="https://s.gravatar.com/avatar/33be6ab889e21199ac8fe26e56c1b346?s=80" />
 
 ---
 
@@ -38,7 +38,7 @@ Tier One hands it over to Tier Two (BA/PM)
 
 +++
 
-Tier Two ... hunt down a developer
+Tier Two ... find a developer
 
 <img src="./assets/mob1.jpg" width="350" />
 
@@ -69,7 +69,7 @@ Elastic is causing the outage...
 ##Result
 
 - Not much you personally can do about this... | 
-- You need to contact DevOps, DOC, NOC, DOC OCK, SPOCK...
+- You need to contact DevOps, DOC, NOC, DOC OCK, SPOCK... |
 
 ---
 
@@ -89,7 +89,7 @@ I can fix it!
 
 ### How to Accomplish?
 
-- How can we figure out, at a glance, that the external systems that talks to app are up and running? |
+- Need to determine, at a glance, that the external systems that talks to app are up and running? |
 
 +++
 
@@ -136,7 +136,10 @@ How are the external systems in ETV organized?
 +++
 
 ### How do I get what I want? 
-##### Mongo
+
++++ 
+
+### Mongo
 
 <img src="assets/mongo.png" width="500"/>
 
@@ -144,7 +147,7 @@ How are the external systems in ETV organized?
 
 +++
 
-##### Elastic Search
+### Elastic Search
 
 <img src="assets/elastic-logo.png" width="500"/>
 
@@ -152,38 +155,38 @@ How are the external systems in ETV organized?
 
 +++
 
-##### Updaters (EngageTVs worker process)
+### Updaters (EngageTVs worker process)
 
 - The Updater process has a monitoring page.  If that page is responding, then the Updater service is running. |
 
 +++
 
-##### Harbor
+### Harbor
 
 - Harbor has a Ping method. -- One and done. |
 
 +++
 
-##### DataCity
+### DataCity
 
 - DataCity has a ping method, but it returns html.  If a 200 response is returned, then assume the site is up. |
 
 +++
 
-##### Titlewave
+### Titlewave
 
 - Titlewave doesn't have a ping method...yet. |
-- *BUT* I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up. |
+- I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up. |
 
 +++
 
-##### ASM
+### Application Security Manager (ASM)
 
 - ASM doesn't have a ping method, and probably won't.  Follow Titlewave's example. |
 
 +++
 
-##### Spotlight
+### Spotlight
 
 - Use the Titlewave thinking...rinse, repeat. |
 *This system will be sunsetted shortly.*
@@ -227,7 +230,7 @@ Since the API endpoint will return a 503 (System Unavailable) if there is an iss
 
 ###Bonus #2
 
-- Other *Upstream* environments can use the endpoint in their System checks to see if EngageTV is running correctly. |
+Other *Upstream* environments can use the endpoint in their System checks to see if EngageTV is running correctly.
 
 ---
 
@@ -253,11 +256,4 @@ CONS:
 ---
 
 ### Questions?
-
-
-
-
-
-
-
 
