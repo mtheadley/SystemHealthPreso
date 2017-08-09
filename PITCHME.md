@@ -4,10 +4,8 @@
 ###### This one trick will ease all of your support pains.
 
 ![Trick](assets/trick.jpg)
-<p>
-	<h3>Mark Headley </h3>
-	<img src="https://s.gravatar.com/avatar/33be6ab889e21199ac8fe26e56c1b346?s=80" />
-</p>
+
+### Mark Headley
 
 ---
 
@@ -80,7 +78,7 @@ Elastic is causing the outage...
 
 ---
 
-### Imma programmer!
+##Imma programmer!
 
 I can make that happen!
 
@@ -88,40 +86,40 @@ I can make that happen!
 
 +++
 
-### How to Accomplish?
+##How to Accomplish?
 
 - Need to determine, at a glance, that the external systems that talks to app are up and running? |
 
 +++
 
-### Possible Solution(s)
+##Possible Solution(s)
 
 Create a status page / sanity check / health monitor / status endpoint
 
 +++
 
-### Overall Goals
+##Overall Goals
 
 - The result must be simple to understand. (Yes/No) |
 - Result should give a simple breakdown of the systems involved. |
 
 +++
 
-### How to Implement?
+##How to Implement?
 
 - Determine a way to check each external system within the application to see if it is responding. |
 - Aggregate that information to show whether or not the application is 'healthy' |
 
 +++
 
-### Easy, right?
+##Easy, right?
 
 - Let's go back to our pratical example... |
 - I am partially biased, so we will use EngageTV... |
 
 --- 
 
-### Thinking...okay "Analysis"
+##Thinking...okay "Analysis"
 
 How are the external systems in ETV organized?
 
@@ -140,7 +138,7 @@ How are the external systems in ETV organized?
 
 +++ 
 
-### Mongo
+##Mongo
 
 <img src="assets/mongo.png" width="500"/>
 
@@ -148,7 +146,7 @@ How are the external systems in ETV organized?
 
 +++
 
-### Elastic Search
+##Elastic Search
 
 <img src="assets/elastic-logo.png" width="500"/>
 
@@ -156,7 +154,7 @@ How are the external systems in ETV organized?
 
 +++
 
-### Updaters (EngageTVs worker process)
+##Updaters (EngageTVs worker process)
 
 <img src="assets/windows-service.png" width="500"/>
 
@@ -164,41 +162,41 @@ How are the external systems in ETV organized?
 
 +++
 
-### Harbor
+##Harbor
 
 - Harbor has a Ping method. -- One and done. |
 
 +++
 
-### DataCity
+##DataCity
 
 - DataCity has a ping method, but it returns html.  If a 200 response is returned, then assume the site is up. |
 
 +++
 
-### Titlewave
+##Titlewave
 
 - Titlewave doesn't have a ping method...yet. |
 - I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up. |
 
 +++
 
-### Application Security Manager (ASM)
+##Application Security Manager (ASM)
 
 - ASM doesn't have a ping method, and probably won't.  Follow Titlewave's example. |
 
 +++
 
-### Spotlight
+##Spotlight
 
 - Use the Titlewave thinking...rinse, repeat. |
 *This system will be sunsetted shortly.*
 
 ---
 
-### Putting the pieces together
+##Putting the pieces together
 
-- Simple JSON object |
+Simple JSON object
 ```
 	SystemName
 	Url
@@ -211,13 +209,15 @@ How are the external systems in ETV organized?
 
 +++
 
-### Time to build
+##Time to build
 
 <img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" width="500"/>
 
 +++
 
-### Demo
+##Demo
+
+<img src="assets/bill.jpg" width="500"/>
 
 ---
 
@@ -233,14 +233,14 @@ Since the API endpoint will return a 503 (System Unavailable) if there is an iss
 
 ###Bonus #2
 
-Other *Upstream* environments can use the endpoint in their System checks to see if EngageTV is running correctly.
+Other *Upstream* environments can use the endpoint in their System checks to see if the application is running correctly.
 
 ---
 
 ###Final thoughts
 
 PROS:
-- Gives us a heads up on the systems that ETV talks with.  We are able to, at a glace, determine if there is an issue and where that issue lies. |
+- Gives us a heads up on external systems within our app.  We are able to, at a glace, determine if there is an issue and where that issue lies. |
 - Goal is to cut down on the amount of time it takes to triage why the system is down. |
 - Streamline a process for DevOps' CI process. |
 
