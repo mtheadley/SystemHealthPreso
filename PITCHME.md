@@ -138,11 +138,15 @@ How are the external systems in ETV organized?
 ### How do I get what I want? 
 ##### Mongo
 
+<img src="assets/mongo.png" width="500"/>
+
 - A raw command can be executed against Mongo and determine based on the results if things are healthy. |
 
 +++
 
 ##### Elastic Search
+
+<img src="assets/elastic-logo.png" width="500"/>
 
 - There is an API call on the Elastic drivers that can be used.  Since the server itself is up all the time, we want to see the health of the indexes. |
 
@@ -213,7 +217,10 @@ How are the external systems in ETV organized?
 
 ###Bonus
 
-- Since the API endpoint will return a 503 (System Unavailable) if there is an issue, and a 200 otherwise; DevOps can use the endpoint in their build process to ensure the application was deployed successfully. |
+Since the API endpoint will return a 503 (System Unavailable) if there is an issue, and a 200 otherwise; DevOps can use the endpoint in their build process to ensure the application was deployed successfully.
+
+
+<img src="assets/Commodus.jpeg" width="500"/>
 
 
 +++
