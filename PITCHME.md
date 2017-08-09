@@ -217,8 +217,6 @@ Simple JSON object
 
 ##Demo
 
-<img src="assets/bill.jpg" width="500"/>
-
 ---
 
 ###Bonus
