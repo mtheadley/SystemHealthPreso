@@ -4,9 +4,10 @@
 ###### This one trick will ease all of your support pains.
 
 ![Trick](assets/trick.jpg)
-
-### Mark Headley 
-<img src="https://s.gravatar.com/avatar/33be6ab889e21199ac8fe26e56c1b346?s=80" />
+<p>
+	<h3>Mark Headley </h3>
+	<img src="https://s.gravatar.com/avatar/33be6ab889e21199ac8fe26e56c1b346?s=80" />
+</p>
 
 ---
 
@@ -81,7 +82,7 @@ Elastic is causing the outage...
 
 ### Imma programmer!
 
-I can fix it!
+I can make that happen!
 
 <img src="./assets/how-much-money-the-characters-in-hbos-silicon-valley-would-make-in-real-life.jpg" width="500" />
 
@@ -120,7 +121,7 @@ Create a status page / sanity check / health monitor / status endpoint
 
 --- 
 
-### Thinking...
+### Thinking...okay "Analysis"
 
 How are the external systems in ETV organized?
 
@@ -156,6 +157,8 @@ How are the external systems in ETV organized?
 +++
 
 ### Updaters (EngageTVs worker process)
+
+<img src="assets/windows-service.png" width="500"/>
 
 - The Updater process has a monitoring page.  If that page is responding, then the Updater service is running. |
 
