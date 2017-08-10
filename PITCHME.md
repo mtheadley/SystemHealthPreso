@@ -66,7 +66,7 @@ Elastic is causing the outage...
 ---
 #What If???
 
-- Tier One could have determined this when they received the call, then notified the correct people?  |
+- Tier One could have determined this issue when they received the call, then notified the correct people?  |
 
 ---
 ##...and you could keep coding?
@@ -130,19 +130,19 @@ Elastic is causing the outage...
 
 <img src="assets/elastic-logo.png" style="border: 0px; width:500px"/>
 
-- There is a call on the Elastic API drivers that can be used.  Since the server itself is up all the time, we want to see the health of the indexes. |
+- Similar to Mongo, there is a call on the Elastic API drivers that can be used.  It returns info on the state of the cluster.  We can use that info to determine the state of the system. |
 
 ---
 ##Updaters (EngageTVs worker process)
 
-<img src="assets/windows_service.png" style="border: 0px; width:500px"/>
+<img src="assets/windows_service.png" style="border: 0px; width:300px"/>
 
 - The Updater process has a monitoring page.  If that page is responding, then the Updater service is running. |
 
 ---
 ##Harbor
 
-<img src="assets/harbor.jpg" style="border: 0px; width:500px"/>
+<img src="assets/harbor.png" style="border: 0px; width:500px"/>
 
 - Harbor has a Ping method. -- One and done. |
 
@@ -156,7 +156,7 @@ Elastic is causing the outage...
 ---
 ##Titlewave
 
-<img src="assets/titlewave.jpg" style="border: 0px; width:500px"/>
+<img src="assets/titlewave.png" style="border: 0px; width:500px"/>
 
 - Titlewave doesn't have a ping method...yet. |
 - I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up. |
@@ -164,14 +164,14 @@ Elastic is causing the outage...
 ---
 ##Application Security Manager (ASM)
 
-<img src="assets/asm.jpg" style="border: 0px; width:500px"/>
+<img src="assets/asm.png" style="border: 0px; width:500px"/>
 
 - ASM doesn't have a ping method, and probably won't.  Follow Titlewave's example. |
 
 ---
 ##Spotlight
 
-<img src="assets/spotlight.jpg" style="border: 0px; width:500px"/>
+<img src="assets/spotlight.png" style="border: 0px; width:500px"/>
 
 - Use the Titlewave thinking...rinse, repeat. |
 *This system will be sunsetted shortly.*
