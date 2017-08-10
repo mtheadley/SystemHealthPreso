@@ -1,8 +1,7 @@
 ---
+---?image=assets/trick.jpg
+---
 ## Is Your application healthy?
-###### This one trick will ease all of your support pains.
-
-<img src="./assets/trick.jpg" style="border: 0px; width:350px" />
 
 ### Mark Headley
 
@@ -12,7 +11,7 @@
 There isn't any code in this preso.
 
 ---
-## ...and fair warning
+## ...another warning
 
 <img src="./assets/smart_ass.jpg" style="border: 0px; width:350px" />
 
