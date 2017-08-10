@@ -97,7 +97,7 @@ Elastic is causing the outage...
 - I am partially biased, so we will use EngageTV... |
 
 --- 
-#Thinking
+#Thinking it thru'
 ---
 ##...okay, okay..."Analysis"
 
@@ -109,11 +109,11 @@ Elastic is causing the outage...
 - Mongo |
 - Elastic |
 - Updaters |
-	- Titlewave |
 	- Harbor |
+	- Titlewave |
 	- ASM |
-	- DataCity |
 	- Spotlight |
+	- DataCity |
 
 ---
 # How do I get what I want? 
@@ -146,13 +146,6 @@ Elastic is causing the outage...
 - Harbor has a Ping method. -- One and done. |
 
 ---
-##DataCity
-
-<img src="assets/data_city.png" style="border: 0px; width:400px"/>
-
-- DataCity has a ping method, but it returns html.  If a 200 response is returned, then assume the site is up. |
-
----
 ##Titlewave
 
 <img src="assets/titlewave.jpg" style="border: 0px; width:250px"/>
@@ -176,6 +169,14 @@ Elastic is causing the outage...
 *This system will be sunsetted shortly.*
 
 ---
+##DataCity
+
+<img src="assets/data_city.png" style="border: 0px; width:400px"/>
+
+- DataCity has a ping method, but it returns html.  If a 200 response is returned, then assume the site is up. |
+
+---
+
 ##Putting the pieces together
 
 Simple JSON object
@@ -233,4 +234,4 @@ Since the API endpoint will return a 503 (System Unavailable) if there is an iss
 ---
 # Questions?
 
-<img src="assets/fox_trot.jpg" style="border: 0px; width:400px"/>
+<img src="assets/fox_trot.jpg" style="border: 0px; width:500px"/>
