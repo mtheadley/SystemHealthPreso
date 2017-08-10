@@ -14,8 +14,13 @@
 There isn't any code in this preso.
 
 ---
+### Warning #2 
 
-## Scenario
+<img src="./assets/smart_ass.jpg" width="350" />
+
+---
+
+# Scenario
 
 ---
 
