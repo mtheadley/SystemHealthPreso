@@ -142,15 +142,21 @@ Elastic is causing the outage...
 ---
 ##Harbor
 
+<img src="assets/harbor.jpg" style="border: 0px; width:500px"/>
+
 - Harbor has a Ping method. -- One and done. |
 
 ---
 ##DataCity
 
+<img src="assets/data_city.png" style="border: 0px; width:500px"/>
+
 - DataCity has a ping method, but it returns html.  If a 200 response is returned, then assume the site is up. |
 
 ---
 ##Titlewave
+
+<img src="assets/titlewave.jpg" style="border: 0px; width:500px"/>
 
 - Titlewave doesn't have a ping method...yet. |
 - I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up. |
@@ -158,10 +164,14 @@ Elastic is causing the outage...
 ---
 ##Application Security Manager (ASM)
 
+<img src="assets/asm.jpg" style="border: 0px; width:500px"/>
+
 - ASM doesn't have a ping method, and probably won't.  Follow Titlewave's example. |
 
 ---
 ##Spotlight
+
+<img src="assets/spotlight.jpg" style="border: 0px; width:500px"/>
 
 - Use the Titlewave thinking...rinse, repeat. |
 *This system will be sunsetted shortly.*
