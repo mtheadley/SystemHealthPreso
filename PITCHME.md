@@ -55,7 +55,7 @@ There isn't any code in this preso.
 
 Elastic is causing the outage... 
 
-<img src="./assets/elastic.png" style="border: 0px; width:500px" />
+<img src="./assets/elastic.png" style="border: 0px; width:400px" />
 
 ---
 ##What to do?
@@ -71,12 +71,12 @@ Elastic is causing the outage...
 ---
 ##...and you could keep coding?
 
-<img src="./assets/happy_programmer.jpg" style="border: 0px; width:500px"/>
+<img src="./assets/happy_programmer.jpg" style="border: 0px; width:400px"/>
 
 ---
 #Imma programmer!
 
-<img src="./assets/how-much-money-the-characters-in-hbos-silicon-valley-would-make-in-real-life.jpg" style="border: 0px; width:500px"/>
+<img src="./assets/how-much-money-the-characters-in-hbos-silicon-valley-would-make-in-real-life.jpg" style="border: 0px; width:400px"/>
 
 ---
 ##Goals
@@ -102,7 +102,7 @@ Elastic is causing the outage...
 ---
 ##...okay, okay..."Analysis"
 
-<img src="./assets/mini_me.gif" style="border: 0px; width:500px" />
+<img src="./assets/mini_me.gif" style="border: 0px; width:400px" />
 
 ---
 ##How are the external systems in ETV organized?
@@ -121,42 +121,42 @@ Elastic is causing the outage...
 --- 
 ##Mongo
 
-<img src="assets/mongo.png" style="border: 0px; width:500px"/>
+<img src="assets/mongo.png" style="border: 0px; width:400px"/>
 
 - A raw command can be executed against Mongo to determine the state of the system based on the results. |
 
 ---
 ##Elastic Search
 
-<img src="assets/elastic-logo.png" style="border: 0px; width:500px"/>
+<img src="assets/elastic-logo.png" style="border: 0px; width:400px"/>
 
 - Similar to Mongo, there is a call on the Elastic API drivers that can be used.  It returns info on the state of the cluster.  We can use that info to determine the state of the system. |
 
 ---
 ##Updaters (EngageTVs worker process)
 
-<img src="assets/windows_service.png" style="border: 0px; width:300px"/>
+<img src="assets/windows_service.png" style="border: 0px; width:250px"/>
 
 - The Updater process has a monitoring page.  If that page is responding, then the Updater service is running. |
 
 ---
 ##Harbor
 
-<img src="assets/harbor.png" style="border: 0px; width:500px"/>
+<img src="assets/harbor.jpg" style="border: 0px; width:250px"/>
 
 - Harbor has a Ping method. -- One and done. |
 
 ---
 ##DataCity
 
-<img src="assets/data_city.png" style="border: 0px; width:500px"/>
+<img src="assets/data_city.png" style="border: 0px; width:400px"/>
 
 - DataCity has a ping method, but it returns html.  If a 200 response is returned, then assume the site is up. |
 
 ---
 ##Titlewave
 
-<img src="assets/titlewave.png" style="border: 0px; width:500px"/>
+<img src="assets/titlewave.jpg" style="border: 0px; width:250px"/>
 
 - Titlewave doesn't have a ping method...yet. |
 - I can perform a GET that returns no data.  If Titlewave returns back without exception, we can assume the system is up. |
@@ -164,14 +164,14 @@ Elastic is causing the outage...
 ---
 ##Application Security Manager (ASM)
 
-<img src="assets/asm.png" style="border: 0px; width:500px"/>
+<img src="assets/asm.jpg" style="border: 0px; width:250px"/>
 
 - ASM doesn't have a ping method, and probably won't.  Follow Titlewave's example. |
 
 ---
 ##Spotlight
 
-<img src="assets/spotlight.jpg" style="border: 0px; width:500px"/>
+<img src="assets/spotlight.jpg" style="border: 0px; width:250px"/>
 
 - Use the Titlewave thinking...rinse, repeat. |
 *This system will be sunsetted shortly.*
@@ -194,7 +194,7 @@ Simple JSON object
 
 ##Time to build
 
-<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" style="border: 0px; width:500px"/>
+<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" style="border: 0px; width:400px"/>
 
 ---
 #Demo
@@ -209,7 +209,7 @@ Other *Upstream* environments can use the endpoint in their System checks to see
 Since the API endpoint will return a 503 (System Unavailable) if there is an issue, and a 200 otherwise; DevOps can use the endpoint in their build process to ensure the application was deployed successfully.
 
 
-<img src="assets/Commodus.jpeg" style="border: 0px; width:500px"/>
+<img src="assets/Commodus.jpeg" style="border: 0px; width:400px"/>
 
 ---
 #Final thoughts
@@ -234,4 +234,4 @@ Since the API endpoint will return a 503 (System Unavailable) if there is an iss
 ---
 # Questions?
 
-<img src="assets/fox_trot.jpg" style="border: 0px; width:500px"/>
+<img src="assets/fox_trot.jpg" style="border: 0px; width:400px"/>
