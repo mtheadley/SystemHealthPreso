@@ -14,30 +14,30 @@ There isn't any code in this preso.
 ---
 ## ...and fair warning
 
-<img src="./assets/smart_ass.jpg" width="350" />
+<img src="./assets/smart_ass.jpg" style="border: 0px; width=350" />
 
 ---
 # Scenario
 
 ---
-## ENGAGE TV is down....
+## Application is down....
 
-<img src="./assets/haironfire.gif" width="350" />
-
----
-## User calls Tier One support.
-
-<img src="./assets/angry-phone-user2.jpg" width="350" />
+<img src="./assets/haironfire.gif" style="border: 0px; width=350" />
 
 ---
-## Tier One hands it over to Tier Two (BA/PM) 
+### User calls Tier One support.
 
-<img src="./assets/throw_over_the_wall.png" width="350" />
+<img src="./assets/angry-phone-user2.jpg" style="border: 0px; width=350"/>
 
 ---
-## Tier Two ... find a developer
+### Tier One hands it over to Tier Two (BA/PM) 
 
-<img src="./assets/mob1.jpg" width="350" />
+<img src="./assets/throw_over_the_wall.png" style="border: 0px; width=350"/>
+
+---
+### Tier Two ... find a developer
+
+<img src="./assets/mob1.jpg" style="border: 0px; width=350"/>
 
 ---
 # Triage 
@@ -55,7 +55,7 @@ There isn't any code in this preso.
 
 Elastic is causing the outage... 
 
-<img src="./assets/elastic.png" width="500" />
+<img src="./assets/elastic.png" style="border: 0px; width=500" />
 
 ---
 ##What to do?
@@ -71,21 +71,17 @@ Elastic is causing the outage...
 ---
 ##...and you could keep coding?
 
-<img src="./assets/fox_trot.jpg" width="500" />
+<img src="./assets/happy_programmer.jpg" style="border: 0px; width=500"/>
 
 ---
 #Imma programmer!
 
-<img src="./assets/how-much-money-the-characters-in-hbos-silicon-valley-would-make-in-real-life.jpg" width="500" />
+<img src="./assets/how-much-money-the-characters-in-hbos-silicon-valley-would-make-in-real-life.jpg" style="border: 0px; width=500"/>
 
 ---
-##How to Accomplish?
+##Goals
 
 - Need to determine, at a glance, that the external systems that talks to app are up and running? |
-
----
-##Overall Goals
-
 - The result must be simple to understand. (Yes/No) |
 - Result should give a simple breakdown of the systems involved. |
 
@@ -98,7 +94,7 @@ Elastic is causing the outage...
 ---
 ##Easy, right?
 
-- Let's go back to our pratical example... |
+- Let's go to a pratical example... |
 - I am partially biased, so we will use EngageTV... |
 
 --- 
@@ -106,7 +102,7 @@ Elastic is causing the outage...
 ---
 ##...okay, okay..."Analysis"
 
-<img src="./assets/mini_me.gif" width="500" />
+<img src="./assets/mini_me.gif" style="border: 0px; width=500" />
 
 ---
 ##How are the external systems in ETV organized?
@@ -125,21 +121,21 @@ Elastic is causing the outage...
 --- 
 ##Mongo
 
-<img src="assets/mongo.png" width="500"/>
+<img src="assets/mongo.png" style="border: 0px; width=500"/>
 
 - A raw command can be executed against Mongo and determine based on the results if things are healthy. |
 
 ---
 ##Elastic Search
 
-<img src="assets/elastic-logo.png" width="500"/>
+<img src="assets/elastic-logo.png" style="border: 0px; width=500"/>
 
 - There is an API call on the Elastic drivers that can be used.  Since the server itself is up all the time, we want to see the health of the indexes. |
 
 ---
 ##Updaters (EngageTVs worker process)
 
-<img src="assets/windows-service.png" width="500"/>
+<img src="assets/windows-service.png" style="border: 0px; width=500"/>
 
 - The Updater process has a monitoring page.  If that page is responding, then the Updater service is running. |
 
@@ -188,36 +184,37 @@ Simple JSON object
 
 ##Time to build
 
-<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" width="500"/>
+<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" style="border: 0px; width=500"/>
 
 ---
 #Demo
 ---
 #Bonus
 
-Since the API endpoint will return a 503 (System Unavailable) if there is an issue, and a 200 otherwise; DevOps can use the endpoint in their build process to ensure the application was deployed successfully.
-
-
-<img src="assets/Commodus.jpeg" width="500"/>
+Other *Upstream* environments can use the endpoint in their System checks to see if the application is running correctly.
 
 ---
 #Bonus #2
 
-Other *Upstream* environments can use the endpoint in their System checks to see if the application is running correctly.
+Since the API endpoint will return a 503 (System Unavailable) if there is an issue, and a 200 otherwise; DevOps can use the endpoint in their build process to ensure the application was deployed successfully.
+
+
+<img src="assets/Commodus.jpeg" style="border: 0px; width=500"/>
 
 ---
 #Final thoughts
 
 ---
 ## PROS:
-- Gives us a heads up on external systems within our app.  We are able to, at a glace, determine if there is an issue and where that issue lies. |
+- Gives us a quick status of external systems used within our app.  |
+- Putting this into a UI, at a glace it can be determined if there is an issue and where that issue lies. |
 - Goal is to cut down on the amount of time it takes to triage why the system is down. |
 - Streamline a process for DevOps' CI process. |
 
 ---
 ## CONS:
-- The System health mechanism is not made for frequent polling.  Since we are cheating with a couple of the checks to external systems, it is unknown what type of effect calling the external endpoints may impact that system's resources. |
-- Some of the calls make take a few moments to return. |
+- This is not made for frequent polling.  Since we are cheating with a couple of the checks to external systems, it is unknown what type of effect calling the external endpoints may impact that system's resources. |
+- Some of the calls may take a few moments to return. |
 
 ---
 #Lingering Thoughts
@@ -227,3 +224,4 @@ Other *Upstream* environments can use the endpoint in their System checks to see
 ---
 # Questions?
 
+<img src="assets/fox_trot.jpg" style="border: 0px; width=500"/>
