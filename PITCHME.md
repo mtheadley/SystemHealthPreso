@@ -48,7 +48,7 @@ There isn't any code in this preso.
 - What errors are the user receiving? |
 - Is there anything in the error emails? |
 - Anything in the logs? |
-- What about the system itself (machines, dns, network, solar alignment, etc...) |
+- What about the systems themselves (machines, dns, network, solar alignment, etc...) |
 
 ---
 #Ah-ha!
@@ -66,7 +66,7 @@ Elastic is causing the outage...
 ---
 #What If???
 
-- Wouldn't it be great if Tier One could have detected this then notified the correct people?  |
+- Tier One could have determined this when they received the call, then notified the correct people?  |
 
 ---
 ##...and you could keep coding?
@@ -86,7 +86,7 @@ Elastic is causing the outage...
 - Result should give a simple breakdown of the systems involved. |
 
 ---
-##How to Implement?
+##What to do?
 
 - Determine a way to check each external system within the application to see if it is responding. |
 - Aggregate that information to show whether or not the application is 'healthy' |
@@ -123,19 +123,19 @@ Elastic is causing the outage...
 
 <img src="assets/mongo.png" style="border: 0px; width:500px"/>
 
-- A raw command can be executed against Mongo and determine based on the results if things are healthy. |
+- A raw command can be executed against Mongo to determine the state of the system based on the results. |
 
 ---
 ##Elastic Search
 
 <img src="assets/elastic-logo.png" style="border: 0px; width:500px"/>
 
-- There is an API call on the Elastic drivers that can be used.  Since the server itself is up all the time, we want to see the health of the indexes. |
+- There is a call on the Elastic API drivers that can be used.  Since the server itself is up all the time, we want to see the health of the indexes. |
 
 ---
 ##Updaters (EngageTVs worker process)
 
-<img src="assets/windows-service.png" style="border: 0px; width:500px"/>
+<img src="assets/windows_service.png" style="border: 0px; width:500px"/>
 
 - The Updater process has a monitoring page.  If that page is responding, then the Updater service is running. |
 
@@ -189,12 +189,12 @@ Simple JSON object
 ---
 #Demo
 ---
-#Bonus
+##Bonus
 
 Other *Upstream* environments can use the endpoint in their System checks to see if the application is running correctly.
 
 ---
-#Bonus #2
+##Bonus #2
 
 Since the API endpoint will return a 503 (System Unavailable) if there is an issue, and a 200 otherwise; DevOps can use the endpoint in their build process to ensure the application was deployed successfully.
 
@@ -217,7 +217,7 @@ Since the API endpoint will return a 503 (System Unavailable) if there is an iss
 - Some of the calls may take a few moments to return. |
 
 ---
-#Lingering Thoughts
+##Lingering Thoughts
 
 - Can it be improved?  You betcha!
 
