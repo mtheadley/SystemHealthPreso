@@ -2,7 +2,7 @@
 ## Is Your application healthy?
 ###### This one trick will ease all of your support pains.
 
-<img src="./assets/trick.jpg" style="border: 0px; width=350px" />
+<img src="./assets/trick.jpg" style="border: 0px; width:350px" />
 
 ### Mark Headley
 
@@ -14,7 +14,7 @@ There isn't any code in this preso.
 ---
 ## ...and fair warning
 
-<img src="./assets/smart_ass.jpg" style="border: 0px; width=350px" />
+<img src="./assets/smart_ass.jpg" style="border: 0px; width:350px" />
 
 ---
 # Scenario
@@ -22,22 +22,22 @@ There isn't any code in this preso.
 ---
 ## Application is down....
 
-<img src="./assets/haironfire.gif" style="border: 0px; width=350px" />
+<img src="./assets/haironfire.gif" style="border: 0px; width:350px" />
 
 ---
 ### User calls Tier One support.
 
-<img src="./assets/angry-phone-user2.jpg" style="border: 0px; width=350px"/>
+<img src="./assets/angry-phone-user2.jpg" style="border: 0px; width:350px"/>
 
 ---
 ### Tier One hands it over to Tier Two (BA/PM) 
 
-<img src="./assets/throw_over_the_wall.png" style="border: 0px; width=350px"/>
+<img src="./assets/throw_over_the_wall.png" style="border: 0px; width:350px"/>
 
 ---
 ### Tier Two ... find a developer
 
-<img src="./assets/mob1.jpg" style="border: 0px; width=350px"/>
+<img src="./assets/mob1.jpg" style="border: 0px; width:350px"/>
 
 ---
 # Triage 
@@ -55,7 +55,7 @@ There isn't any code in this preso.
 
 Elastic is causing the outage... 
 
-<img src="./assets/elastic.png" style="border: 0px; width=500px" />
+<img src="./assets/elastic.png" style="border: 0px; width:500px" />
 
 ---
 ##What to do?
@@ -71,12 +71,12 @@ Elastic is causing the outage...
 ---
 ##...and you could keep coding?
 
-<img src="./assets/happy_programmer.jpg" style="border: 0px; width=500px"/>
+<img src="./assets/happy_programmer.jpg" style="border: 0px; width:500px"/>
 
 ---
 #Imma programmer!
 
-<img src="./assets/how-much-money-the-characters-in-hbos-silicon-valley-would-make-in-real-life.jpg" style="border: 0px; width=500px"/>
+<img src="./assets/how-much-money-the-characters-in-hbos-silicon-valley-would-make-in-real-life.jpg" style="border: 0px; width:500px"/>
 
 ---
 ##Goals
@@ -102,7 +102,7 @@ Elastic is causing the outage...
 ---
 ##...okay, okay..."Analysis"
 
-<img src="./assets/mini_me.gif" style="border: 0px; width=500px" />
+<img src="./assets/mini_me.gif" style="border: 0px; width:500px" />
 
 ---
 ##How are the external systems in ETV organized?
@@ -121,21 +121,21 @@ Elastic is causing the outage...
 --- 
 ##Mongo
 
-<img src="assets/mongo.png" style="border: 0px; width=500px"/>
+<img src="assets/mongo.png" style="border: 0px; width:500px"/>
 
 - A raw command can be executed against Mongo and determine based on the results if things are healthy. |
 
 ---
 ##Elastic Search
 
-<img src="assets/elastic-logo.png" style="border: 0px; width=500px"/>
+<img src="assets/elastic-logo.png" style="border: 0px; width:500px"/>
 
 - There is an API call on the Elastic drivers that can be used.  Since the server itself is up all the time, we want to see the health of the indexes. |
 
 ---
 ##Updaters (EngageTVs worker process)
 
-<img src="assets/windows-service.png" style="border: 0px; width=500px"/>
+<img src="assets/windows-service.png" style="border: 0px; width:500px"/>
 
 - The Updater process has a monitoring page.  If that page is responding, then the Updater service is running. |
 
@@ -184,7 +184,7 @@ Simple JSON object
 
 ##Time to build
 
-<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" style="border: 0px; width=500px"/>
+<img src="https://media.giphy.com/media/XW3Q6lR8d7Nss/giphy.gif" style="border: 0px; width:500px"/>
 
 ---
 #Demo
@@ -199,7 +199,7 @@ Other *Upstream* environments can use the endpoint in their System checks to see
 Since the API endpoint will return a 503 (System Unavailable) if there is an issue, and a 200 otherwise; DevOps can use the endpoint in their build process to ensure the application was deployed successfully.
 
 
-<img src="assets/Commodus.jpeg" style="border: 0px; width=500px"/>
+<img src="assets/Commodus.jpeg" style="border: 0px; width:500px"/>
 
 ---
 #Final thoughts
@@ -224,4 +224,4 @@ Since the API endpoint will return a 503 (System Unavailable) if there is an iss
 ---
 # Questions?
 
-<img src="assets/fox_trot.jpg" style="border: 0px; width=500px"/>
+<img src="assets/fox_trot.jpg" style="border: 0px; width:500px"/>
