@@ -1,5 +1,5 @@
 ---
----?image=assets/trick.jpg
+<img src="./assets/trick.jpg" style="border: 0px; width:100%" />
 ---
 ## Is Your application healthy?
 
