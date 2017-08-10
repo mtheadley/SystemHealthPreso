@@ -2,7 +2,7 @@
 ## Is Your application healthy?
 ###### This one trick will ease all of your support pains.
 
-![Trick](assets/trick.jpg)
+<img src="./assets/trick.jpg" style="border: 0px; width=350px" />
 
 ### Mark Headley
 
