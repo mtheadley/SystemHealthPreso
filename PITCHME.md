@@ -42,7 +42,7 @@ There isn't any code in this preso.
 ---
 # Triage 
 ---
-## What went wrong?
+## What's wrong?
 
 - New code having problems? |
 - What errors are the user receiving? |
@@ -171,7 +171,7 @@ Elastic is causing the outage...
 ---
 ##Spotlight
 
-<img src="assets/spotlight.png" style="border: 0px; width:500px"/>
+<img src="assets/spotlight.jpg" style="border: 0px; width:500px"/>
 
 - Use the Titlewave thinking...rinse, repeat. |
 *This system will be sunsetted shortly.*
